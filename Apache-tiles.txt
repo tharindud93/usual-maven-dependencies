@@ -1,0 +1,15 @@
+<!--When you add tiles you have to add any logging dependancy for your project -->
+
+<!-- <tiles> -->
+<dependency>
+    <groupId>org.apache.tiles</groupId>
+    <artifactId>tiles-jsp</artifactId>
+    <version>3.0.5</version>
+</dependency>
+
+<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-api</artifactId>
+	<version>1.6.6</version>
+</dependency>
+<!-- <end tiles> -->

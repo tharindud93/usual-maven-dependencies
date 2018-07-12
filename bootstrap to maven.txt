@@ -1,0 +1,28 @@
+<<------pom dependancies---->>
+<dependency>
+    <groupId>org.webjars</groupId>
+    <artifactId>jquery</artifactId>
+    <version>2.1.1</version>
+</dependency>
+ 
+<dependency>
+    <groupId>org.webjars</groupId>
+    <artifactId>bootstrap</artifactId>
+    <version>3.2.0</version>
+    <exclusions>
+        <exclusion>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+
+<<------Configure servlet-context.xml---->>
+	<resources mapping="/webjars/**" location="/webjars/" />
+
+<<------Enter bootstrap to jsp file---->>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel='stylesheet' href='webjars/bootstrap/3.2.0/css/bootstrap.min.css'>
+<!--Your code-->
+<script type="text/javascript" src="webjars/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>
